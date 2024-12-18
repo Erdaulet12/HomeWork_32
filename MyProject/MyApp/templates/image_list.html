@@ -1,0 +1,9 @@
+<h1>Список изображений</h1>
+<ul>
+    {% for image in images %}
+        <li>
+            <p>{{ image.name }}</p>
+            <img src="{{ image.image.url }}" alt="{{ image.name }}" width="200">
+        </li>
+    {% endfor %}
+</ul>
